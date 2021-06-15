@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { GoogleAnaliticsService } from './shared/services/google-analitics.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { GalleryComponent } from './pages/gallery/gallery.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GoogleAnaliticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
